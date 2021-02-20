@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* Master Stylesheet */
+
+/* :: 1.0 Import Fonts */
+
+/* :: 2.0 Import All CSS Plugins */
+
+@import url(bootstrap.min.css);
+@import url(magnific-popup.css);
+
+// *******************
+//     utilities
+// *******************
+@import 'utilities/fonts';
+@import 'utilities/color';
+
+// *******************
+//     stylesheet
+// *******************
+@import 'reboot';
+@import 'spacing';
+@import 'header';
+@import 'main';
+@import 'formstyle';
+@import 'footer';

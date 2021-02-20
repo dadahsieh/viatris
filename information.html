@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!-- Title -->
+  <title>藍鯨悠活團購網_Viatris暉致</title>
+  <!-- Favicon -->
+  <link rel="icon" type="img/png" href="https://www.bwlohas.com/images/favicon.png" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/viatris_staff.min.css" />
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <a class="logo" href="https://www.bwlohas.com/zh-tw" target="_blank"></a>
+      </div>
+    </div>
+  </div>
+  <!-- ##### login ##### -->
+  <div class="container bluebg">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="tit">收件人資料</div>
+        <div class="entry">
+          <div class="formbox">
+            <div class="form-group">
+              <h2>紅利折抵</h2>
+              <p>
+                目前累積的紅利<span style="color:red">0</span>點，此筆交易最多可使用<span style="color:red">0</span>點
+              </p>
+              <input type="tel" name="" class="form-control" placeholder="請輸入要使用的紅利" />
+            </div>
+          </div>
+        </div>
+        <div class="entry">
+          <div class="bill">
+            <div class="billrow">
+              <div class="billcell_1">
+                小計
+              </div>
+              <div class="billcell_3 textright">
+                $111111
+              </div>
+            </div>
+            <div class="billrow">
+              <div class="billcell_1">
+                運費 <span class="tipicon">滿1500免運</span>
+              </div>
+              <div class="billcell_3 textright">
+                +$60
+              </div>
+            </div>
+            <div class="billrow">
+              <div class="billcell_1">
+                紅利
+              </div>
+              <div class="billcell_3 textright">
+                -$60
+              </div>
+            </div>
+          </div>
+          <div class="bill" style="border-top: 1px solid #ccc">
+            <div class="billrow">
+              <div class="billcell_1">
+                總計
+              </div>
+              <div class="billcell_4 textright">
+                $2222
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="entry">
+          <div class="formbox">
+            <div class="form-group">
+              <h2>付款方式</h2>
+              <div class="radio">
+                <label class="form-group form-check">信用卡
+                  <input type="radio" name="radio" />
+                  <span class="radiomark"></span>
+                </label>
+                <label class="form-group form-check">網路ATM
+                  <input type="radio" name="radio" />
+                  <span class="radiomark"></span>
+                </label>
+              </div>
+              <h2>送貨方式</h2>
+              <div class="radio">
+                <label class="form-group form-check">全家超商取貨
+                  <input type="radio" name="radio" />
+                  <span class="radiomark"></span>
+                  <div class="input-group mb-15">
+                    <div class="input-group-addon ttm-font-14">門市店號</div>
+                    <input name="zip" readonly="readonly" class="form-control col-md-8" style=" height: 35px" />
+                  </div>
+                  <div class="input-group mb-15">
+                    <div class="input-group-addon ttm-font-14">門市名稱</div>
+                    <input name="zip" readonly="readonly" class="form-control col-md-8" style=" height: 35px" />
+                  </div>
+                  <button type="submit" class="btPrimary">選擇門市</button>
+                </label>
+                <label class="form-group form-check">7-11超商取貨
+                  <input type="radio" name="radio" />
+                  <span class="radiomark"></span>
+                  <div class="input-group mb-15">
+                    <div class="input-group-addon ttm-font-14">門市店號</div>
+                    <input name="zip" readonly="readonly" class="form-control col-md-8" style=" height: 35px" />
+                  </div>
+                  <div class="input-group mb-15">
+                    <div class="input-group-addon ttm-font-14">門市名稱</div>
+                    <input name="zip" readonly="readonly" class="form-control col-md-8" style=" height: 35px" />
+                  </div>
+                  <button type="submit" class="btPrimary">選擇門市</button>
+                </label>
+              </div>
+              <br />
+              <h2>訂購人資料</h2>
+              <p>手機號碼</p>
+              <input type="tel" name="" class="form-control" />
+              <p>E-mail</p>
+              <input type="tel" name="" class="form-control" />
+              <label class="form-check">
+                <input data-val="true" data-val-range="需同意接受條款" data-val-range-max="True" data-val-range-min="True"
+                  data-val-required="IsAgree 欄位是必要項。" id="IsAgree" name="IsAgree" type="checkbox" value="true" />
+                <input name="IsAgree" type="hidden" value="false" />願意收到健康及優惠資訊
+                <span class="checkmark"></span>
+              </label>
+              <br />
+              <h2>收件人資料</h2>
+              <p>收件人姓名</p>
+              <input type="tel" name="" class="form-control" placeholder="請使用本名" />
+              <p>手機號碼</p>
+              <input type="tel" name="" class="form-control" />
+              <br />
+              <h2>發票資訊</h2>
+              <div class="form-group">
+                <div class="form-field">
+                  <select name="invoiceType" id="invoice" class="form-control icon-down" onchange="checkYear();">
+                    <option value="1">二聯發票</option>
+                    <option value="2">三聯發票</option>
+                    <option value="3">手機載具</option>
+                    <option value="4">自然人憑證</option>
+                    <option value="5">捐贈發票</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-10" id="ioption1" style="display: none">
+                <div class="form-group"></div>
+              </div>
+              <div class="col-md-12" id="ioption2" style="display: none">
+                <div class="form-group">
+                  <label>統一編號</label>
+                  <input type="text" id="" class="form-control" placeholder="" />
+                </div>
+                <div class="form-group">
+                  <label>發票抬頭</label>
+                  <input type="text" id="" class="form-control" placeholder="" />
+                </div>
+                <div class="form-group">
+                  <label>E-mail</label>
+                  <input type="text" id="" class="form-control" placeholder="" />
+                </div>
+              </div>
+              <div class="col-md-12" id="ioption3" style="display: none">
+                <div class="form-group">
+                  <label>手機條碼載具</label>
+                  <input type="text" id="" class="form-control" placeholder="" />
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-12 col-md-5">
+                    <img src="images/invoice2.jpg" alt="" style="width: 100%" />
+                  </div>
+                  <div class="col-xs-12 col-md-7 f16g">
+                    請輸入"/"開頭，共8碼之手機條碼載具編號
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12" id="ioption4" style="display: none">
+                <div class="form-group">
+                  <label>自然人憑證</label>
+                  <input type="text" id="" class="form-control" placeholder="" />
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-12 col-md-5">
+                    <img src="images/invoice1.jpg" alt="" style="width: 100%" />
+                  </div>
+                  <div class="col-xs-12 col-md-7 f16g">
+                    輸入自然人憑證右下角，2碼英文字母＋14碼數字之編號
+                  </div>
+                </div>
+              </div>
+              <div id="ioption5" style="display: none; float: left">
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <label>捐贈單位</label>
+                  </div>
+                  <div class="col-xs-12">
+                    <label class="form-group form-check">臺灣基督教門諾會醫療財團法人門諾醫院
+                      <input type="radio" name="radio" />
+                      <span class="radiomark"></span>
+                    </label>
+                    <label class="form-group form-check">台灣流浪動物希望協會
+                      <input type="radio" name="radio" />
+                      <span class="radiomark"></span>
+                    </label>
+                    <label class="form-group form-check">財團法人伊甸社會福利基金會
+                      <input type="radio" name="radio" />
+                      <span class="radiomark"></span>
+                    </label>
+                    <label class="form-group form-check">財團法人喜憨兒社會福利基金會
+                      <input type="radio" name="radio" />
+                      <span class="radiomark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clear">
+              <br />
+            </div>
+            <div class="twobt">
+              <button class="btGlay" onclick="window.location.href='product.html'">
+                取消
+              </button>
+              <button class="btPrimary" onclick="window.location.href='finish.html'">
+                下一步
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ##### Footer ##### -->
+  <div class="container">
+    <div class="row">
+      <div class="footer">
+        <a href="https://www.bwlohas.com/zh-tw/about/service" target="_blank">服務條款</a>
+        <a href="https://www.bwlohas.com/zh-tw/about/privacy" target="_blank">隱私權政策</a>
+        <p>© 2019 BWLOHAS. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+  <!-- ##### All Javascript Script ##### -->
+  <!-- jquery-3.3.1 js -->
+  <script src="js/jquery/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap js -->
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+  <script>
+    //發票選項切換
+    function checkYear() {
+      var selectValue = $("select[name='invoiceType']").val();
+      if (selectValue == 1) {
+        $('#ioption1').show();
+        $('#ioption2').hide();
+        $('#ioption3').hide();
+        $('#ioption4').hide();
+        $('#ioption5').hide();
+      }
+      if (selectValue == 2) {
+        $('#ioption1').hide();
+        $('#ioption2').show();
+        $('#ioption3').hide();
+        $('#ioption4').hide();
+        $('#ioption5').hide();
+      }
+      if (selectValue == 3) {
+        $('#ioption1').hide();
+        $('#ioption2').hide();
+        $('#ioption3').show();
+        $('#ioption4').hide();
+        $('#ioption5').hide();
+      }
+      if (selectValue == 4) {
+        $('#ioption1').hide();
+        $('#ioption2').hide();
+        $('#ioption3').hide();
+        $('#ioption4').show();
+        $('#ioption5').hide();
+      }
+      if (selectValue == 5) {
+        $('#ioption1').hide();
+        $('#ioption2').hide();
+        $('#ioption3').hide();
+        $('#ioption4').hide();
+        $('#ioption5').show();
+      }
+    }
+  </script>
+</body>
+
+</html>

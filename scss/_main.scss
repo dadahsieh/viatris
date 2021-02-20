@@ -1,0 +1,457 @@
+.btPrimary {
+  height: 50px;
+  width: 100%;
+  background: $primary;
+  border-radius: 5px;
+  color: $white;
+  font-size: 18px;
+  text-align: center;
+  line-height: 45px;
+  display: block;
+
+  &:hover {
+    background: $hover;
+  }
+}
+
+.btLine {
+  height: 50px;
+  width: 100%;
+  border: 1px solid $primary;
+  background: $white;
+  border-radius: 5px;
+  color: $primary;
+  font-size: 18px;
+  text-align: center;
+  line-height: 45px;
+  display: block;
+
+  &:hover {
+    color: $white;
+    background: $hover;
+  }
+}
+
+.btGlay {
+  height: 50px;
+  width: 100%;
+  background: $glay;
+  border-radius: 5px;
+  color: $text;
+  font-size: 18px;
+  text-align: center;
+  line-height: 45px;
+  display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.twobt {
+  display: flex;
+}
+
+.twobt button {
+  flex: 1;
+  margin: 5px;
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.kv {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
+
+.kv img {
+  width: 100%;
+  height: 100%;
+}
+
+.bluebg {
+  background: $secondary;
+}
+
+.bluebg2 {
+  background-color: #d6efff;
+}
+
+.formbox {
+  margin: 0 auto;
+
+  h2 {
+    font-size: 24px;
+    color: $primary;
+    margin: 12px 0;
+  }
+}
+
+.entry {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.tit1 {
+  width: 100%;
+  background: url(/images/titline.png) repeat-x 0px 15px;
+  text-align: center;
+  margin: 20px 0;
+
+  span {
+    font-size: 24px;
+    background-color: $secondary;
+    padding: 0 20px;
+  }
+}
+
+.entry h1 {
+  text-align: center;
+  font-size: 22px;
+  color: $primary;
+  line-height: 1.5;
+}
+
+.entry .actionbt {
+  width: 60%;
+  margin: 30px auto 0;
+}
+
+.tit2 {
+  width: 100%;
+  background: url(/images/titline.png) repeat-x 0px 15px;
+  text-align: center;
+  margin: 20px 0;
+
+  span {
+    font-size: 24px;
+    background-color: $bg-body;
+    padding: 0 20px;
+  }
+}
+
+.explanation {
+  color: $text;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+.explanation li {
+  list-style-type: decimal;
+  margin-left: 25px;
+}
+
+.explanation p {
+  color: $text;
+  font-size: 18px;
+}
+
+.video-tit {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  color: $primary;
+  font-weight: bold;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tit {
+  font-size: 24px;
+  line-height: 2em;
+  color: $primary;
+  font-weight: 600;
+
+  .titbt {
+    background: url(../images/recordbt@2x.png) no-repeat;
+    width: 120px;
+    background-size: contain;
+    height: 42px;
+    float: right;
+    margin-top: 8px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+.phonecode {
+  background: #f09300;
+  width: 200px;
+  height: 45px;
+  border-radius: 40px;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+  display: block;
+  cursor: pointer;
+  margin: 10px 0;
+
+  &:hover {
+    color: #fff;
+    background: #cc6600;
+  }
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+
+  .pic {
+    width: 100%;
+    padding-bottom: 0%;
+    position: relative;
+    display: block;
+
+    .openinfo {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      background: #fff;
+      padding: 8px;
+      color: $primary;
+      font-size: 15px;
+      border-radius: 10px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .info {
+    padding: 12px;
+
+    h2 {
+      font-size: 18px;
+      border-bottom: 1px #ccc dashed;
+      line-height: 1.5em;
+      height: 80px;
+      overflow: hidden;
+    }
+
+    .price {
+      font-weight: 700;
+
+      span {
+        color: $primary;
+        font-size: 36px;
+        margin-left: 24px;
+      }
+
+      em {
+        font-size: 16px;
+        text-decoration: line-through;
+      }
+    }
+  }
+}
+
+.custom-pop {
+  position: relative;
+  bottom: 0;
+  border-radius: 10px;
+  background: #fff;
+  width: 96%;
+  max-width: 750px;
+  margin: 20px auto 0;
+  height: 90vh;
+
+  .poptit {
+    color: $primary;
+    font-size: 20px;
+    padding: 8px 16px;
+    border-bottom: 1px #ccc solid;
+  }
+
+  .popinner {
+    padding: 8px;
+    height: 80vh;
+    overflow-y: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 499px) {
+  .custom-pop {
+    position: fixed;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+#pop2 {
+  position: relative;
+  bottom: 0;
+  border-radius: 10px;
+  background: #fff;
+  width: 96%;
+  max-width: 750px;
+  margin: 20px auto 0;
+  height: 90vh;
+
+  .poptit {
+    color: $primary;
+    font-size: 20px;
+    padding: 8px 16px;
+    border-bottom: 1px #ccc solid;
+  }
+
+  .popinner {
+    padding: 8px;
+    height: 80vh;
+    overflow-y: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 499px) {
+  #pop2 {
+    position: fixed;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+#pop3 {
+  position: relative;
+  bottom: 0;
+  border-radius: 10px;
+  background: #fff;
+  width: 96%;
+  max-width: 750px;
+  margin: 20px auto 0;
+  height: 90vh;
+
+  .poptit {
+    color: $primary;
+    font-size: 20px;
+    padding: 8px 16px;
+    border-bottom: 1px #ccc solid;
+  }
+
+  .popinner {
+    padding: 8px;
+    height: 80vh;
+    overflow-y: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 499px) {
+  #pop3 {
+    position: fixed;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+.mfp-close {
+  font-size: 40px;
+}
+
+.bill {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+
+  .billrow {
+    display: table-row;
+    height: 30px;
+
+    .billcell_1 {
+      width: 70%;
+      display: table-cell;
+      padding: 0 8px;
+      line-height: 2.5em;
+    }
+
+    .billcell_2 {
+      width: 10%;
+      display: table-cell;
+      padding: 0 8px;
+      line-height: 2.5em;
+    }
+
+    .billcell_3 {
+      width: 30%;
+      display: table-cell;
+      padding: 0 8px;
+      line-height: 2.5em;
+    }
+
+    .billcell_4 {
+      width: 30%;
+      display: table-cell;
+      padding: 0 8px;
+      line-height: 2em;
+      color: $primary;
+      font-size: 24px;
+    }
+  }
+}
+
+.tip {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.tipicon {
+  background: #ff5050;
+  text-align: center;
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 6px;
+  color: $white;
+  margin-right: 5px;
+  vertical-align: top;
+}
