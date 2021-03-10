@@ -455,3 +455,37 @@
   margin-right: 5px;
   vertical-align: top;
 }
+
+.medtitle {
+  color: $primary;
+  padding: 0.2em 0;
+  border-top: solid 3px $primary;
+  border-bottom: solid 3px $primary;
+  font-size: 24px;
+  line-height: 2em;
+  font-weight: 600;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.medalert {
+  background: #fef3db;
+  position: relative;
+  padding: 6px;
+  height: 44px;
+  text-align: center;
+  border-top: solid 1px #e9a645;
+
+  border-bottom: solid 1px #e9a645;
+
+  span {
+    vertical-align: top;
+    color: #e9a645;
+  }
+}
+
+.callicon {
+  display: inline;
+  vertical-align: middle;
+  fill: #e9a645;
+}
